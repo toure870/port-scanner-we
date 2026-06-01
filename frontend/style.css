@@ -1,0 +1,107 @@
+/* Réinitialisation de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+  background-color: #0f172a; /* Fond sombre moderne */
+  color: #f8fafc; /* Texte clair */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.2rem;
+  color: #38bdf8; /* Bleu clair */
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.body {
+  width: 100%;
+  max-width: 450px;
+}
+
+.style {
+  background-color: #1e293b; /* Fond carte */
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  border: 1px solid #334155;
+}
+
+/* Champs de saisie */
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 14px 16px;
+  background-color: #334155;
+  border: 1px solid #475569;
+  border-radius: 8px;
+  color: #f8fafc;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+input::placeholder {
+  color: #94a3b8;
+}
+
+input:focus {
+  outline: none;
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
+}
+
+/* Bouton */
+button {
+  width: 100%;
+  padding: 14px;
+  background-color: #0ea5e9;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+  margin-top: 8px;
+}
+
+button:hover {
+  background-color: #0284c7;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Zone de résultat */
+p {
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 6px;
+  background-color: #334155;
+  color: #fbbf24; /* Jaune pour les infos */
+  font-size: 0.95rem;
+  min-height: 25px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.7rem;
+  }
+  .style {
+    padding: 25px;
+  }
+}
